@@ -27,9 +27,7 @@ var Mall = React.createClass({
                 <Navigation projectName="react shopping mall" />
 
                 {items.map(function(item) {
-                    return <li>
-                        <Item data={item}/>
-                    </li>
+                    return <Item data={item}/>
                 }) }
             </div>
         )
