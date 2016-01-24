@@ -41,5 +41,9 @@ module.exports = {
     copyImgs: {
         src: src + '/imgs/*.png',
         dest: dest + '/imgs'
+    },
+    copyLibs: {
+        src: src + '/libs/*.js',
+        dest: dest + '/libs'
     }
 };
