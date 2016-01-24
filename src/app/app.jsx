@@ -16,12 +16,12 @@
         render: function() {
             return (
                 <Locations hash>
-                    <Location path="/home" handler={Home} />
-                    <Location path="/mall" handler={Mall} />
+                    <Location path="/home" handler={Home}/>
+                    <Location path="/mall" handler={Mall}/>
                 </Locations>
             )
         }
     });
 
-    ReactDOM.render(React.createElement(App), document.body);
+    ReactDOM.render(<App/>, document.getElementById('mainContent'));
 })();
