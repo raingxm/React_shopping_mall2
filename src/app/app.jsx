@@ -1,13 +1,13 @@
 (function() {
     var React = require('react'),
+        Router = require('react-router-component'),
+        Locations = Router.Locations,
+        Location = Router.Location,
         injectTapEventPlugin = require("react-tap-event-plugin"),
         ReactDOM = require('react-dom'),
-        Main = require('./components/main.jsx'),
-        Mall = require('./components/mall.jsx');
 
-    var Router = require('react-router-component');
-    var Locations = Router.Locations;
-    var Location = Router.Location;
+        Home = require('./components/home.jsx'),
+        Mall = require('./components/mall.jsx');
 
     injectTapEventPlugin();
 
@@ -16,7 +16,7 @@
         render: function() {
             return (
                 <Locations hash>
-                    <Location path="/home" handler={Main} />
+                    <Location path="/home" handler={Home} />
                     <Location path="/mall" handler={Mall} />
                 </Locations>
             )
