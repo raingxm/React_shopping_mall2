@@ -36,6 +36,10 @@ module.exports = {
     },
     copyData: {
         src: src + '/data/*.json',
-        dest: dest
+        dest: dest + '/data'
+    },
+    copyImgs: {
+        src: src + '/imgs/*.png',
+        dest: dest + '/imgs'
     }
 };
