@@ -15,9 +15,9 @@ var Navigation = React.createClass({
                 <a className="navbar-brand" href="#">{this.props.projectName}</a>
                 <Nav className="nav navbar-nav">
                     <NavItem className="active" eventKey={1} href="#home">Home</NavItem>
-                    <NavItem eventKey={2} href="#about">Mall</NavItem>
-                    <NavItem eventKey={2} href="#about">Shopping Cart</NavItem>
-                    <NavItem eventKey={2} href="#about">Check Out</NavItem>
+                    <NavItem eventKey={2} href="#mall">Mall</NavItem>
+                    <NavItem eventKey={2} href="#shoopingcart">Shopping Cart</NavItem>
+                    <NavItem eventKey={2} href="#checkout">Check Out</NavItem>
                     <DropdownButton eventKey={3} title="Dropdown">
                         <MenuItem eventKey="1">Action</MenuItem>
                         <MenuItem eventKey="2">Another action</MenuItem>
