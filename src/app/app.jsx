@@ -7,7 +7,8 @@
         ReactDOM = require('react-dom'),
 
         Home = require('./components/home.jsx'),
-        Mall = require('./components/mall.jsx');
+        Mall = require('./components/mall.jsx'),
+        Cart = require('./components/cart.jsx');
 
     injectTapEventPlugin();
 
@@ -18,6 +19,7 @@
                 <Locations hash>
                     <Location path="/home" handler={Home}/>
                     <Location path="/mall" handler={Mall}/>
+                    <Location path="/shoopingcart" handler={Cart}/>
                 </Locations>
             )
         }

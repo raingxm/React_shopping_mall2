@@ -3,6 +3,7 @@ var Bootstrap = require('react-bootstrap');
 
 var Navigation = require('./navigation.jsx');
 var Item = require('./item.jsx');
+var Cart = require('./cart.jsx');
 
 var Mall = React.createClass({
 
@@ -29,6 +30,7 @@ var Mall = React.createClass({
                 {items.map(function(item) {
                     return <Item data={item}/>
                 }) }
+
             </div>
         )
     }
