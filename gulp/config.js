@@ -8,7 +8,9 @@ module.exports = {
         },
         files: [
             dest + '/**'
-        ]
+        ],
+        port: 3010,
+        startPath: '/#home'
     },
     less: {
         src: src + '/less/main.less',
