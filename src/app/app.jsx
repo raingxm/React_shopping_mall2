@@ -1,12 +1,27 @@
-(function () {
+(function() {
     var React = require('react'),
         injectTapEventPlugin = require("react-tap-event-plugin"),
-        ReactDOM = require('react-dom');
-        Main = require('./components/main.jsx');
+        ReactDOM = require('react-dom'),
+        Main = require('./components/main.jsx'),
+        Mall = require('./components/mall.jsx');
 
-    window.React = React;
+    var Router = require('react-router-component');
+    var Locations = Router.Locations;
+    var Location = Router.Location;
 
     injectTapEventPlugin();
 
-    ReactDOM.render(<Main />, document.body);
+    var App = React.createClass({
+
+        render: function() {
+            return (
+                <Locations hash>
+                    <Location path="/home" handler={Main} />
+                    <Location path="/mall" handler={Mall} />
+                </Locations>
+            )
+        }
+    });
+
+    ReactDOM.render(React.createElement(App), document.body);
 })();
