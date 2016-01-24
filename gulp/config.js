@@ -33,5 +33,9 @@ module.exports = {
             dest: dest,
             outputName: 'app.js'
         }]
+    },
+    copyData: {
+        src: src + '/data/*.json',
+        dest: dest
     }
 };
