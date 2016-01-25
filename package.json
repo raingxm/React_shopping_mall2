@@ -36,6 +36,7 @@
     "watchify": "^2.2.1"
   },
   "dependencies": {
+    "envify": "^3.4.0",
     "react-bootstrap": "0.13.3",
     "react-dom": "^0.14.6",
     "react-router-component": "^0.29.0",
